@@ -321,3 +321,59 @@ footer hr {
     background: #125688;
     color: white;
 }
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 680px) {
+    .top-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .top-container {
+        /* position: absolute; */
+        width: 334px;
+        height: 472px;
+        left: 21px;
+        top: 0px;
+    }
+
+    .top-text {
+        /* position: absolute; */
+        width: 258px;
+        height: 178px;
+        left: 59px;
+        top: 72px;
+    }
+
+    .top-container .top-text h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .top-container .top-image img {
+        /* position: relative; */
+        width: 233px;
+        height: 245px;
+        left: 84px;
+        top: 227px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .side-menu {
+        display: inline-block;
+        grid-template-rows: repeat();
+    }
+
+}
