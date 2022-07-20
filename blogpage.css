@@ -349,6 +349,7 @@ Media Queries for Mobile
         margin: 0% -15% 0% -9%;
         justify-content: center;
         height: 4500px;
+        max-width: 600px;
     }
 
     .top-container {
