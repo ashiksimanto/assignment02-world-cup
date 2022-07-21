@@ -1,13 +1,14 @@
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
 }
 
 main {
     height: 100%;
     width: 100%;
     background-color: #FFFFFF;
-    margin: 0% 15%;
+    margin: auto;
     padding: 0px;
     width: 1321px;
 }
@@ -24,7 +25,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* margin: 50px 50px 0px 110px; */
-    margin: 50px 0;
+    margin: 50px 0px;
 }
 
 .top-text {
@@ -77,6 +78,7 @@ main {
 /* Mid Section Start */
 .mid-section {
     margin-top: 140px;
+
 
 
 
@@ -260,8 +262,8 @@ main {
 footer {
     background-color: #030003;
     color: #FFFFFF;
-    margin: 0% 8%;
-    width: 1600px;
+
+    width: 1320px;
     height: 444px;
     text-align: center;
     padding-top: 94px;
@@ -294,7 +296,7 @@ footer a {
 footer hr {
     border: .5px solid #FFFFFF;
     margin-top: 40px;
-    width: 1320px;
+    width: 1120px;
 
 }
 
@@ -346,11 +348,13 @@ Media Queries for Mobile
 @media only screen and (max-width: 600px) {
 
     body {
-        margin: 0% -15% 0% -9%;
+        margin: 10%;
         justify-content: center;
         height: 4500px;
         max-width: 600px;
     }
+
+
 
     .top-container {
         display: grid;
@@ -384,15 +388,23 @@ Media Queries for Mobile
         text-align: center;
     }
 
+
     .top-container .top-text p {
-        display: none;
-        margin: 0;
+        font-size: 12px;
+        max-width: 250px;
+        text-align: center;
+        margin: 0 45px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+
     }
 
     .top-container .top-text {
         margin: 0px;
         position: relative;
-        top: -50px;
+        top: -70px;
     }
 
     .top-container .top-image img {
@@ -403,10 +415,15 @@ Media Queries for Mobile
         top: 275px;
     }
 
+
+
+
     .top-container .top-button {
         justify-content: center;
         text-align: center;
+
     }
+
 
     .blogs {
         display: grid;
@@ -416,6 +433,7 @@ Media Queries for Mobile
     .mid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin: auto;
     }
 
     .side-menu {
@@ -437,8 +455,8 @@ Media Queries for Mobile
     footer {
         background-color: #030003;
         color: #FFFFFF;
-        margin: 0% 8%;
-        width: 375px;
+        margin: auto;
+        width: 334px;
         height: 450px;
         text-align: center;
         padding-top: 20px;
@@ -462,7 +480,6 @@ Media Queries for Mobile
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: auto;
         color: aliceblue;
         margin: 25px 50px 25px 50px;
         text-decoration: none;
