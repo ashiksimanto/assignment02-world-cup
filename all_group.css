@@ -27,7 +27,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* margin: 50px 50px 0px 110px; */
-    margin: 50px 0;
+    margin: 50px 10px;
 }
 
 .top-text {
@@ -72,6 +72,81 @@ main {
     margin-top: 40px;
 }
 
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.swing:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
 .fa-solid.fa-angle-right {
     font-size: 20px;
     margin-left: 25px;
@@ -114,7 +189,7 @@ main {
 
 .menu-all {
     padding: 15px;
-    background-color: white;
+    background-color: red;
     border-radius: 10px;
     margin: 15px;
     text-align: center;
@@ -124,12 +199,12 @@ main {
 .menu-all a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .menu-bl {
     padding: 15px;
-    background-color: red;
+    background-color: white;
     border-radius: 10px;
     margin: 15px;
     text-align: center;
@@ -139,7 +214,7 @@ main {
 .menu-bl a {
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .all-group {
@@ -195,12 +270,12 @@ main {
     color: white;
 }
 
-.menu-all:hover {
+.menu-bl:hover {
     background-color: red;
     color: #FFFFFF;
 }
 
-.menu-all a:hover {
+.menu-bl a:hover {
     color: white;
 }
 
@@ -320,7 +395,7 @@ Media Queries for Mobile
         left: 21px;
         top: 0px;
         /* justify-content: center; */
-        margin-left: -10px;
+        margin: 30px;
 
     }
 
@@ -361,10 +436,10 @@ Media Queries for Mobile
 
     .top-container .top-image img {
         /* position: relative; */
-        width: 233px;
-        height: 245px;
+        width: 223px;
+        height: 235px;
         left: 95px;
-        top: 275px;
+        top: 265px;
     }
 
 
@@ -375,6 +450,7 @@ Media Queries for Mobile
         text-align: center;
 
     }
+
 
     .all-group {
         display: flex;
@@ -390,6 +466,7 @@ Media Queries for Mobile
     .mid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
     }
 
     .side-menu {
@@ -411,8 +488,8 @@ Media Queries for Mobile
     footer {
         background-color: #030003;
         color: #FFFFFF;
-        margin: 0% 8%;
-        width: 375px;
+        margin: 0% 0%;
+        width: 385px;
         height: 450px;
         text-align: center;
         padding-top: 20px;

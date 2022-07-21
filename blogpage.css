@@ -36,7 +36,7 @@ main {
     width: 581px;
     height: 613px;
     position: absolute;
-    top: 83px;
+    margin-top: 32px;
 }
 
 .top-container .top-text {
@@ -69,6 +69,83 @@ main {
 .top-button {
     margin-top: 40px;
 }
+
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.swing:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
 
 .fa-solid.fa-angle-right {
     font-size: 20px;
@@ -262,7 +339,7 @@ main {
 footer {
     background-color: #030003;
     color: #FFFFFF;
-
+    margin: auto;
     width: 1320px;
     height: 444px;
     text-align: center;
@@ -409,10 +486,10 @@ Media Queries for Mobile
 
     .top-container .top-image img {
         /* position: relative; */
-        width: 233px;
-        height: 245px;
+        width: 223px;
+        height: 235px;
         left: 95px;
-        top: 275px;
+        top: 265px;
     }
 
 
@@ -536,3 +613,213 @@ Media Queries for Mobile
 
 
 }
+
+/*-----------------------
+Media Queries for Tablet 
+-------------------------*/
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+
+    body {
+        overflow-x: hidden;
+        font-family: 'Open Sans', sans-serif;
+        margin: auto;
+    }
+
+    main {
+        /* height: 100%; */
+        width: 100%;
+        background-color: #FFFFFF;
+        /* margin: 0% 6%; */
+        padding: 0px;
+        background-color: #FFFFFF;
+        margin: auto;
+        padding: 0px;
+        width: 750px;
+    }
+
+    .top-banner {
+        justify-content: center;
+    }
+
+    .top-container {
+        background-color: #161616;
+        border-radius: 30px;
+        width: 750px;
+        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin: 50px 50px 0px 110px; */
+        margin: 20px 0;
+    }
+
+    .top-text {
+        align-items: center;
+    }
+
+    .top-container .top-image img {
+        width: 300px;
+        height: 320px;
+        /* position: absolute; */
+        top: 117px;
+    }
+
+    .top-container .top-text {
+        margin-left: 40px;
+    }
+
+    .top-container .top-text h1 {
+        font-style: normal;
+
+        font-size: 40px;
+        color: white;
+        margin-top: 100px;
+    }
+
+    .top-container .top-text p {
+        font-size: 10px;
+        max-width: 250px;
+        text-align: center;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .top-container .top-text a {
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 16px 25px;
+        border-radius: 5px;
+    }
+
+    .top-button {
+        margin-top: 40px;
+    }
+
+
+
+    .mid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    .side-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 150px;
+
+    }
+
+    .side-menu {
+        background-color: white;
+        margin: 0%;
+        margin-top: -120px;
+
+    }
+
+    .hidden-button {
+        justify-content: center;
+        text-align: center;
+        display: block;
+        bottom: 50px;
+
+
+    }
+
+    .hidden-button a {
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 16px 45px;
+        border-radius: 5px;
+
+
+
+    }
+
+
+    footer {
+        background-color: #030003;
+        color: #FFFFFF;
+        margin: auto;
+        width: 820px;
+        height: 444px;
+        text-align: center;
+        padding-top: 94px;
+        border-radius: 50px;
+        margin-top: 150px;
+
+
+    }
+
+    .goal {
+        align-items: center;
+
+    }
+
+    footer h1 {
+        margin-top: 70px;
+        font-size: 48px;
+    }
+
+    footer a {
+
+        display: inline-block;
+        align-items: center;
+        margin: auto;
+        color: aliceblue;
+        margin: 25px 30px 25px 30px;
+        text-decoration: none;
+
+    }
+
+    footer hr {
+        border: .5px solid #FFFFFF;
+        margin-top: 40px;
+        width: px;
+
+    }
+
+    .fa {
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30%;
+        text-align: center;
+        text-decoration: none;
+        margin: 25px 20px;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
